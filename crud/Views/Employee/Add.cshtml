@@ -1,0 +1,27 @@
+﻿@model crud.Models.AddEmployeeViewModel;
+@{
+}
+
+<h1>Add Employee</h1>
+<form method="post" action="add" class="mt-5">
+    <div class="form-group">
+        <div class="mb-3">
+            <label for="">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter Name" asp-for="Name">
+            </div>
+        <div class="mb-3">
+            <label for="">Email address</label>
+            <input type="email" class="form-control" placeholder="Enter Email" asp-for="Email">
+        </div>
+        <div class="mb-3">
+            <label for="">Salary</label>
+            <input type="number" class="form-control" placeholder="Enter Salary" asp-for="Salary">
+        </div>
+        <div class="mb-3">
+            <label for="">Department</label>
+            <input type="text" class="form-control" placeholder="Enter Department" asp-for="Department">
+        </div>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
